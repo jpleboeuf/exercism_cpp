@@ -1,8 +1,18 @@
-#if !defined(ISOGRAM_H)
-#define ISOGRAM_H
+#pragma once
+
+#define EXERCISM_RUN_ALL_TESTS
+
+#include <string>
 
 namespace isogram {
 
+  bool is_isogram(std::string);
+
 }  // namespace isogram
 
-#endif // ISOGRAM_H
+namespace stdp {  // "std prime"
+
+  bool isalnum_char(char);
+  char tolower_char(char);
+
+}  // namespace stdp
