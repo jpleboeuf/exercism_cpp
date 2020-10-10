@@ -5,8 +5,8 @@ using namespace std;
 
 namespace stdp {
   
-  bool isalnum_char(char c) {
-    return isalnum(static_cast<unsigned char>(c));
+  bool isalpha_char(char c) {
+    return isalpha(static_cast<unsigned char>(c));
   }  
 
   char tolower_char(char c) {
@@ -21,10 +21,10 @@ namespace isogram {
     return (int) c - (int) 'a';
   }
 
-  bool is_isogram(string str) {
+  bool is_isogram(const string & str) {
     int alphagram[26] = {};
-    for (char& c : str) {
-      if (stdp::isalnum_char(c)) {
+    for (const char & c : str) {
+      if (stdp::isalpha_char(c)) {
         char lc = stdp::tolower_char(c);
         int lc_ap = alpha_pos(lc);
         alphagram[lc_ap]++;
