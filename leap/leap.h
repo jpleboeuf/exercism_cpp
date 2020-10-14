@@ -4,7 +4,9 @@
 
 namespace leap {
 
-  bool is_leap_year(const int);
+  typedef int year_t;
+
+  bool is_leap_year(const year_t);
 
 }  // namespace leap
 
@@ -12,4 +14,4 @@ namespace stdp {  // "std prime"
 
   inline bool divbl(const int, const int);
 
-}  // namespace leap
+}  // namespace stdp
