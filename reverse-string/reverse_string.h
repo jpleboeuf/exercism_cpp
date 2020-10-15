@@ -1,8 +1,11 @@
-#if !defined(REVERSE_STRING_H)
-#define REVERSE_STRING_H
+#pragma once
+
+#define EXERCISM_RUN_ALL_TESTS
+
+#include <string>
 
 namespace reverse_string {
 
-}  // namespace reverse_string
+  std::string reverse_string(const std::string &);
 
-#endif // REVERSE_STRING_H
+}  // namespace reverse_string
