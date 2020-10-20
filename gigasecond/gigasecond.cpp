@@ -5,7 +5,7 @@ using namespace boost::posix_time;
 namespace gigasecond {
 
   constexpr unsigned long long int operator"" _G(unsigned long long int ulli) {
-    return ulli * 1000 * 1000 * 1000;
+    return ulli * 1'000'000'000;
   }
 
   const time_duration td_gigasecond = seconds(1_G);
