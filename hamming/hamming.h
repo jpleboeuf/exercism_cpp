@@ -1,8 +1,15 @@
-#if !defined(HAMMING_H)
-#define HAMMING_H
+#pragma once
+
+#define EXERCISM_RUN_ALL_TESTS
+
+#include <string>
+#include <stdexcept>
+#include <vector>
+#include <algorithm>  // std::transform, std::count_if
+#include <iterator>   // std::back_inserter
 
 namespace hamming {
 
-}  // namespace hamming
+  int compute(const std::string &, const std::string &);
 
-#endif // HAMMING_H
+}  // namespace hamming
