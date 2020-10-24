@@ -4,7 +4,7 @@ using namespace std;
 
 namespace hamming {
 
-  int compute(const std::string & s1, const std::string & s2) {
+  int compute(const string & s1, const string & s2) {
     if (s1.length() != s2.length()) {
       throw domain_error("sequences not of equal length");
     }
